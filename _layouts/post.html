@@ -1,0 +1,21 @@
+---
+layout: default
+moot: true
+---
+
+<article class="article">
+<h1>{{ page.title }}</h1>
+{{ content }}
+</article>
+
+<div id="moot"></div>
+<script>
+    var page = '{{ page.id | escape }}';
+    var i = page.lastIndexOf('/');
+    if (i !== -1) page = page.substr(0, i) + ':' + page.substr(i + 1);
+    url = 'https://moot.it/i/digitalslovakia' + page;
+    $('#moot').moot({
+        url: url,
+        title: '{{ page.title | escape }}'
+    });
+</script>

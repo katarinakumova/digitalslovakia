@@ -1,0 +1,76 @@
+.sidebar {
+    float: left;
+    width: 260px;
+}
+
+.sidebar h2 {
+    font: 20pt Aller, serif;
+    margin: 1.2em 0 0.7em 0;
+}
+
+.sidebar h2 a {
+    color: inherit;
+    display: block;
+    padding: 0.2em;
+    margin-left: -0.2em;
+    margin-top: -0.2em;
+}
+
+.sidebar *:first-child h2 {
+    margin-top: 0;
+}
+
+.sidebar .topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .topics .topic {
+    display: block;
+    font: 1.2em/2.2em Aller, serif;
+    padding: 0 0.5em;
+    margin: 0.5em;
+    border-radius: 0.2em;
+    margin-left: -0.5em;
+}
+
+.sidebar .topics .count {
+    float: right;
+    background: #eee;
+    border-radius: 0.2em;
+    padding: 0.1em 0.5em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 80%;
+    margin: 0.6em 0;
+    color: #777;
+    font-weight: bold;
+}
+
+.sidebar .topics .topic.selected {
+    background: #d0e7f9;
+}
+
+.sidebar .topics .topic.selected .count {
+    background: #569ed7;
+    color: #f1f9ff;
+}
+
+.sidebar .author img {
+    width: 100px;
+    border-radius: 2px;
+}
+
+.sidebar .author .name {
+    font: bold 14pt Open Sans;
+    margin: 0.7em 0;
+}
+
+.sidebar .author strong {
+    color: #333;
+}
+
+.sidebar .author p {
+    font: 14px/20px "Open Sans";
+}
